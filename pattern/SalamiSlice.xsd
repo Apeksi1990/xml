@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified">
+
+    <xsd:element name="CustomerId" type="xsd:int" />
+    <xsd:element name="FirstName" type="xsd:string" />
+    <xsd:element name="LastName" type="xsd:string" />
+    <xsd:element name="StreetAddress" type="xsd:string"/>
+    <xsd:element name="City" type="xsd:string"/>
+    <xsd:element name="Zip" type="xsd:string"/>
+
+    <xsd:element name="Customer">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="CustomerId" />
+                <xsd:element ref="FirstName" />
+                <xsd:element ref="LastName" />
+                <xsd:element name="Address">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element ref="StreetAddress" />
+                            <xsd:element ref="City" />
+                            <xsd:element ref="Zip" />
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

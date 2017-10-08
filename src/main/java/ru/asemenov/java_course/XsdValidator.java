@@ -13,7 +13,8 @@ import java.io.IOException;
 public class XsdValidator {
     public static void main(String[] args)
     {
-        boolean answer = validateXMLSchema("Message.xsd", "Message.xml");
+        //boolean answer = validateXMLSchema("Message.xsd", "Message.xml");
+        boolean answer = validateXMLSchema("pattern/GardenofEden.xsd", "pattern/Customer.xml");
         System.out.println("Result:" + answer);
     }
 

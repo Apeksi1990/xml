@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Customer>
+    <CustomerId>100</CustomerId>
+    <FirstName>Павел</FirstName>
+    <LastName>Орлов</LastName>
+    <Address>
+        <StreetAddress>Угрешская 2</StreetAddress>
+        <City>Москва</City>
+        <Zip>115088</Zip>
+    </Address>
+</Customer>
